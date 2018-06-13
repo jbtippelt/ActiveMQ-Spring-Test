@@ -12,5 +12,6 @@ You can find the ActiveMQ-Dashboard under http://localhost:8161/admin with usern
 For production usage see https://hub.docker.com/r/webcenter/activemq/#quick-start to configure ActiveMQ.
 
 Run the Producer- and the Consumer-Project.
+
 Go to http://localhost:8081/produce/YourName.
-In the Consumer-Project Terminal you will see the received data.
+In the Consumer-Project Console you will see the received data.
