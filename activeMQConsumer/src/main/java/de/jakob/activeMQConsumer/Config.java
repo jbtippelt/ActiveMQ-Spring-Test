@@ -15,6 +15,7 @@ import org.springframework.jms.support.converter.MessageConverter;
 import org.springframework.jms.support.converter.MessageType;
 
 import javax.jms.ConnectionFactory;
+import javax.jms.Destination;
 import javax.jms.Queue;
 
 @EnableJms
@@ -31,8 +32,13 @@ public class Config {
     private String password;
 
     @Bean
-    public Queue queue() {
-        return new ActiveMQQueue("my-queue");
+    public Destination addDestination() {
+        return new ActiveMQQueue("add-user-queue");
+    }
+
+    @Bean
+    public Destination getRequestDestination() {
+        return new ActiveMQQueue("get-user-queue");
     }
 
     @Bean
