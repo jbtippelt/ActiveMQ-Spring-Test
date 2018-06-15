@@ -2,6 +2,8 @@
 
 Simple test project to show how to queue objects in ActiveMQ (no-in-memory) with Spring. Also implemented a request-reply-functionality with temp-queues.
 
+I wrote an article about this project: http://jboka.de/2018/06/14/my-way-with-activemq.html
+
 ## Getting Started
 
 * Start ActiveMQ. The fastest way is probably as docker container:
