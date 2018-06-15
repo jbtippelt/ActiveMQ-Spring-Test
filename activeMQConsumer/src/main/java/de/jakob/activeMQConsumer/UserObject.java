@@ -2,7 +2,7 @@ package de.jakob.activeMQConsumer;
 
 import java.io.Serializable;
 
-public class UserObject implements Serializable {
+public class UserObject {
 
     private String name;
     private int age;

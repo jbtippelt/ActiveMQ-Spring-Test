@@ -42,7 +42,7 @@ public class Consumer {
         Connection connection = connectionFactory.createConnection();
         connection.start();
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-
+ 
         ObjectMapper mapper = new ObjectMapper();
         int i = indexMessage.getIntProperty("index");
 
